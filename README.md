@@ -1,1 +1,1 @@
-# Visual-Regression-Testing-
+# Visual-Regression-Testing
