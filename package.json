@@ -1,0 +1,16 @@
+{
+  "name": "pptr-visual-udemy",
+  "version": "1.0.0",
+  "description": "Visual Regression Testing With Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aby",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.3",
+    "jest-image-snapshot": "^5.1.0",
+    "puppeteer": "^16.1.0"
+  }
+}
