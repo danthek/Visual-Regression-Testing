@@ -18,7 +18,10 @@ describe('Percy Visual Test', () => {
 		await browser.close()
 	})
 	it('Full Page Percy Snapshot', async function () {
-		await page.goto('https://www.example.com/')
+		await page.goto(
+			'https://app.dev.cymatic.info/organizations/60b0eb2e-bc5d-4bce-8e5b-b45249f7207b/companies'
+		)
+
 		await page.waitForTimeout(3000)
 		await percySnapshot(page, 'Homepage responsive test', {
 			widths: [768, 992, 1200],
