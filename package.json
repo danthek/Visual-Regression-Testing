@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test-snapshots": "jest --config=jest.config.js --detectOpenHandles --forceExit",
-		"test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
+		"test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+		"test:percy": "percy exec -- jest -i ./tests-snapshots/__tests__/percy.test.js"
 	},
 	"author": "Aby",
 	"license": "ISC",
@@ -14,5 +15,9 @@
 		"jest-image-snapshot": "^5.1.0",
 		"prettier": "^2.7.1",
 		"puppeteer": "^16.1.0"
+	},
+	"devDependencies": {
+		"@percy/cli": "^1.9.1",
+		"@percy/puppeteer": "^2.0.2"
 	}
 }
