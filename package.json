@@ -17,7 +17,7 @@
 		"puppeteer": "^16.1.0"
 	},
 	"devDependencies": {
-		"@percy/cli": "^1.9.1",
+		"@percy/cli": "^1.10.0",
 		"@percy/puppeteer": "^2.0.2"
 	}
 }
