@@ -39,7 +39,9 @@ describe('Visual Regression Testing', () => {
 		const h1 = await page.waitForSelector('h1')
 		const image = await h1.screenshot() // we are targeting the  area of the h1 instead of the entire page.
 		expect(image).toMatchImageSnapshot({
-			failureThresholdType: 'percent',
+			//expect + tomatch.. (jest native function)
+			failureThresholdType: 'percent' /* failureThresholdType: 'pixel',
+			failureThreshold: 500, // if its 500 or more pixels , the test will fail */,
 			failureThreshold: '0.01',
 		})
 	})
